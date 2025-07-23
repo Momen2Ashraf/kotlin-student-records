@@ -27,6 +27,7 @@ fun main() {
     }
 
     //Requirement 3: Transforming and Filtering with map and filter
+    println()
     studentGrades
         .filter { it.value >= 80 }
         .map { it.key.uppercase() }
@@ -58,5 +59,5 @@ fun GenrateReport(studentGrades: Map<String, Int>){
         filtered.forEach{println("${it.key}: ${it.value}")}
     }
     else
-        println("\nplease fill the map with elements !")
+        println("please fill the map with elements !")
 }
